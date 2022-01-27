@@ -56,6 +56,11 @@
                              "C-c"
                              "C-r"))
 (projectile-add-known-project "~/DevelopmentEnvironments/Relief/platform-js")
+(setq
+
+ projectile-project-search-path '("~/DevelopEnvironments/Heruka/ThroughPort/"))
+
+(projectile-add-known-project "/home/jimmy/DevelopEnvironments/asimplemodule/climatesensefirmware")
 
 ;; Temp solution for Typescript and tsx
 
