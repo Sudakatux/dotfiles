@@ -54,3 +54,4 @@
 (package! tree-sitter)
 (package! tree-sitter-langs)
 (package! prettier-js)
+(package! zprint-mode)

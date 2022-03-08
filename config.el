@@ -60,7 +60,7 @@
 
  projectile-project-search-path '("~/DevelopEnvironments/Heruka/ThroughPort/"))
 
-(projectile-add-known-project "/home/jimmy/DevelopEnvironments/asimplemodule/climatesensefirmware")
+(projectile-add-known-project "~/DevelopmentEnvironments/Orkes/clj_worker")
 
 ;; Temp solution for Typescript and tsx
 
@@ -84,6 +84,10 @@
   ;; This makes every node a link to a section of code
   (setq tree-sitter-debug-jump-buttons t
         ;; and this highlights the entire sub tree in your code
+
         tree-sitter-debug-highlight-jump-region t))
 
 (load! "+prettier")
+(map! :localleader
+:map (clojure-mode-map clojurescript-mode-map)
+"=" #'zprint)
